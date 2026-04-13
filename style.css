@@ -1,5 +1,6 @@
 
 :root {
+  --max-width: 1120px;
   --bg: #ffffff;
   --surface: #f7f8fb;
   --surface-strong: #eef2f7;
@@ -8,6 +9,7 @@
   --accent: #081e45;
   --accent-soft: #1c2f5c;
   --border: #dfe4ec;
+  --header-border-color: rgba(8, 30, 69, 0.1);
   --shadow: 0 24px 60px rgba(8, 30, 69, 0.08);
 }
 
@@ -41,17 +43,21 @@ select {
 }
 
 .container {
-  width: min(1120px, calc(100% - 40px));
+  width: min(var(--max-width), calc(100% - 40px));
   margin: 0 auto;
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 20;
+  height: 5rem;
   background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(15, 28, 53, 0.06);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--header-border-color);
+  box-shadow: 0 18px 38px rgba(8, 30, 69, 0.08);
 }
 
 .header-inner {
@@ -59,7 +65,10 @@ select {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 22px 0;
+  height: 100%;
+  padding: 0 20px;
+  width: min(var(--max-width), calc(100% - 40px));
+  margin: 0 auto;
 }
 
 .logo {
@@ -81,12 +90,17 @@ select {
   font-size: 0.95rem;
   padding: 8px 0;
   border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
   color: var(--accent);
   border-color: var(--accent);
+}
+
+.nav-link.active {
+  font-weight: 700;
 }
 
 .menu-toggle {
@@ -100,7 +114,7 @@ select {
 }
 
 .page-content {
-  padding: 56px 0 80px;
+  padding: calc(5rem + 32px) 0 80px;
 }
 
 .hero-section,
@@ -167,7 +181,7 @@ h2 {
   border: 1px solid var(--border);
   border-radius: 24px;
   padding: 28px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 18px 50px rgba(8, 30, 69, 0.06);
 }
 
 .card-highlight {
