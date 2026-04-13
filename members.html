@@ -103,8 +103,10 @@
 
         <h2>Profile Photo Upload</h2>
         <p>Choose profile images to preview on this page. The selected files are displayed locally in your browser.</p>
-        <div class="upload-panel">
+        <div class="upload-panel" id="uploadPanel">
+          <label for="imageUpload" class="upload-label">Click here or drag images into this area to upload</label>
           <input id="imageUpload" type="file" accept="image/*" multiple>
+          <div class="upload-note">PNG / JPEG files only. Images will appear here as previews and are not stored on the site.</div>
           <div id="imagePreview" class="image-preview-grid">
             <div class="preview-item">No images selected yet.</div>
           </div>
