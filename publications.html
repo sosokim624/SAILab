@@ -1,61 +1,69 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SAILab | Publication</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAILab | Publications</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html">SAILab</a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="members.html">Members</a>
-        <a class="nav-link" href="research.html">Research</a>
-        <a class="nav-link active" href="publications.html">Publication</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
-    </div>
-  </header>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">
+          <span class="brand-name">SAILab</span>
+          <span class="brand-tag">Scalable AI Lab</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="members.html" class="nav-link">Members</a>
+          <a href="research.html" class="nav-link">Research</a>
+          <a href="publications.html" class="nav-link active">Publication</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <main class="page-content container">
-    <section class="section-heading">
-      <h1>Publication</h1>
-      <p>Selected conference and journal publications from SAILab.</p>
-    </section>
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h1>Publications</h1>
+            <p>Selected international publications representing our latest work.</p>
+          </div>
 
-    <section class="grid-section">
-      <article class="card card-highlight">
-        <h2>Conference Publication (International)</h2>
-        <ul class="publication-list">
-          <li>2025 · Scalable models for resource-efficient AI systems · International AI Conference.</li>
-          <li>2024 · Generalization across modalities with compact architectures · Global Machine Learning Symposium.</li>
-          <li>2023 · Principles for robust foundation model training in academic settings · Symposium on AI Research.</li>
-        </ul>
-      </article>
+          <div class="section-grid publication-grid">
+            <article class="content-card">
+              <h2>Conference Publication (International)</h2>
+              <ul class="publication-list">
+                <li><strong>Efficient Scaling in Academic AI</strong> — International conference on scalable machine learning.</li>
+                <li><strong>Generalization Across Modalities</strong> — Global symposium on AI systems research.</li>
+                <li><strong>Foundation Model Optimization</strong> — International workshop on large-scale AI models.</li>
+              </ul>
+            </article>
 
-      <article class="card">
-        <h2>Journal Publication (International)</h2>
-        <ul class="publication-list">
-          <li>2025 · Academic sustainability in large-scale AI research · Journal of Artificial Intelligence Research.</li>
-          <li>2024 · Efficient training strategies for scalable AI models · International Journal of Machine Learning.</li>
-          <li>2023 · Foundational principles for cross-domain adaptation · AI Systems Journal.</li>
-        </ul>
-      </article>
-    </section>
-  </main>
+            <article class="content-card">
+              <h2>Journal Publication (International)</h2>
+              <ul class="publication-list">
+                <li><strong>Academic Sustainability for AI</strong> — Journal of Computational Intelligence.</li>
+                <li><strong>Principled AI Architectures</strong> — International Journal of Artificial Intelligence Research.</li>
+                <li><strong>Scalable Learning Strategies</strong> — Journal of Machine Learning Systems.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>SAILab &middot; Scalable AI Lab</p>
-      <p>From Principle to Practice: Building General, Scalable, and Efficient AI</p>
-      <p class="footer-note">&copy; <span class="current-year"></span> SAILab</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>SAILab &middot; Scalable AI Lab</p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

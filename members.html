@@ -1,109 +1,71 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SAILab | Members</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html">SAILab</a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link active" href="members.html">Members</a>
-        <a class="nav-link" href="research.html">Research</a>
-        <a class="nav-link" href="publications.html">Publication</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
-    </div>
-  </header>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">
+          <span class="brand-name">SAILab</span>
+          <span class="brand-tag">Scalable AI Lab</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="members.html" class="nav-link active">Members</a>
+          <a href="research.html" class="nav-link">Research</a>
+          <a href="publications.html" class="nav-link">Publication</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <main class="page-content container">
-    <section class="section-heading">
-      <h1>Members</h1>
-      <p>Meet the SAILab team working on scalable, efficient, and general AI research.</p>
-    </section>
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h1>Members</h1>
+            <p>Meet the team driving research at SAILab.</p>
+          </div>
 
-    <section class="grid-section">
-      <article class="card card-highlight">
-        <h2>Professor</h2>
-        <div class="profile-card">
-          <div class="profile-avatar">HC</div>
-          <div>
-            <h3>Hyesong Choi (최혜송)</h3>
-            <p>E-mail: <a href="mailto:hyesong@ssu.ac.kr">hyesong@ssu.ac.kr</a></p>
-            <p><a href="https://sites.google.com/view/hyesongchoi" target="_blank" rel="noopener">https://sites.google.com/view/hyesongchoi</a></p>
+          <div class="team-grid">
+            <div class="member-card professor-card">
+              <h2>Professor</h2>
+              <p class="member-name">Prof. Hye Song</p>
+              <p>Principal investigator leading scalable AI research and academic sustainability initiatives.</p>
+            </div>
+
+            <div class="student-panel">
+              <h2>Students</h2>
+              <div class="student-grid">
+                <div class="student-item">1</div>
+                <div class="student-item">2</div>
+                <div class="student-item">3</div>
+                <div class="student-item">4</div>
+                <div class="student-item">5</div>
+                <div class="student-item">6</div>
+                <div class="student-item">7</div>
+                <div class="student-item">8</div>
+              </div>
+            </div>
           </div>
         </div>
-      </article>
+      </section>
+    </main>
 
-      <article class="card">
-        <h2>Students</h2>
-        <div class="students-grid">
-          <div class="student-card">
-            <h3>Sohee Kim (김소희)</h3>
-            <span>Student</span>
-            <span>E-mail: <a href="mailto:soheekim624@daum.net">soheekim624@daum.net</a></span>
-            <span>26.09.01 ~</span>
-          </div>
-          <div class="student-card">
-            <h3>Jihyeon Kim (김지현)</h3>
-            <span>Student</span>
-            <span>E-mail: <a href="mailto:suri0323@naver.com">suri0323@naver.com</a></span>
-            <span>26.09.01 ~</span>
-          </div>
-          <div class="student-card">
-            <h3>Hyejin Go (고혜진)</h3>
-            <span>Student</span>
-            <span>E-mail: <a href="mailto:hyejin1612@soongsil.ac.kr">hyejin1612@soongsil.ac.kr</a></span>
-            <span>26.09.01 ~</span>
-          </div>
-          <div class="student-card">
-            <h3>Semi Lee (이세미)</h3>
-            <span>Undergraduate Student</span>
-            <span>E-mail: <a href="mailto:seemi.tech@gmail.com">seemi.tech@gmail.com</a></span>
-          </div>
-          <div class="student-card">
-            <h3>Sungjun Kim (김성준)</h3>
-            <span>Undergraduate Student</span>
-            <span>E-mail: <a href="mailto:mcl33912@gmail.com">mcl33912@gmail.com</a></span>
-          </div>
-          <div class="student-card">
-            <h3>Taehyung Kim (김성준)</h3>
-            <span>Undergraduate Student</span>
-            <span>E-mail: <a href="mailto:xogud704@naver.com">xogud704@naver.com</a></span>
-          </div>
-          <div class="student-card">
-            <h3>KaHyeon Nam (남가현)</h3>
-            <span>Undergraduate Student</span>
-            <span>E-mail: <a href="mailto:chloenam33@gmail.com">chloenam33@gmail.com</a></span>
-          </div>
-          <div class="student-card">
-            <h3>Soosan Lee (이수산)</h3>
-            <span>Undergraduate Student</span>
-            <span>E-mail: <a href="mailto:susana0221@naver.com">susana0221@naver.com</a></span>
-          </div>
-          <div class="student-card">
-            <h3>Yoonsu Kim (김윤수)</h3>
-            <span>Undergraduate Student</span>
-            <span>E-mail: <a href="mailto:yoonsoo2005@gmail.com">yoonsoo2005@gmail.com</a></span>
-          </div>
-        </div>
-      </article>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>SAILab &middot; Scalable AI Lab</p>
-      <p>From Principle to Practice: Building General, Scalable, and Efficient AI</p>
-      <p class="footer-note">&copy; <span class="current-year"></span> SAILab</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>SAILab &middot; Scalable AI Lab</p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
