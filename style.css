@@ -3,11 +3,11 @@
 :root {
   --max-width: 1120px;
   --bg: #ffffff;
-  --text: #151515;
-  --muted: #5e6a7a;
-  --accent: #52357B;
-  --border: rgba(82, 53, 123, 0.12);
-  --surface: #f9f7fb;
+  --text: #111111;
+  --muted: #6d7480;
+  --accent: #0b1d3a;
+  --border: rgba(11, 29, 58, 0.12);
+  --surface: #f5f7fa;
 }
 
 * {
@@ -260,10 +260,33 @@ h2 {
   border-radius: 18px;
   display: grid;
   place-items: center;
-  background: var(--accent);
+  background: var(--text);
   color: #fff;
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+.profile-card h3,
+.student-card h3 {
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.profile-card p,
+.student-card p {
+  margin: 4px 0;
+  color: var(--muted);
+}
+
+.student-card {
+  text-align: left;
+  color: var(--text);
+  font-weight: 400;
+  padding: 0;
+}
+
+.student-card span {
+  display: block;
 }
 
 .students-grid {
