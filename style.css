@@ -2,12 +2,12 @@
 :root {
   --max-width: 1120px;
   --bg: #ffffff;
-  --surface: #f5f7fb;
-  --surface-strong: #eef2f7;
+  --surface: #f6f8fb;
+  --surface-strong: #eef4fb;
   --text: #0f1c35;
-  --muted: #5a6578;
-  --accent: #081e45;
-  --border: #d8dbe1;
+  --muted: #5f6c7c;
+  --accent: #0c3443;
+  --border: #e6eaee;
 }
 
 * {
@@ -23,7 +23,12 @@ body {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 img,
@@ -49,43 +54,41 @@ select {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 5rem;
-  z-index: 20;
+  right: 0;
+  height: 72px;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
+  z-index: 20;
 }
 
 .header-inner {
   width: min(var(--max-width), calc(100% - 40px));
+  height: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
+  gap: 24px;
 }
 
 .logo {
   color: var(--accent);
-  text-decoration: none;
   font-weight: 700;
   font-size: 1.15rem;
 }
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  gap: 22px;
 }
 
 .nav-link {
-  color: var(--text);
-  text-decoration: none;
+  color: var(--muted);
   font-size: 0.95rem;
   opacity: 0.85;
-  padding: 6px 0;
+  padding: 8px 0;
   border-bottom: 2px solid transparent;
-  transition: color 0.2s ease, opacity 0.2s ease, border-color 0.2s ease;
+  transition: color 0.25s ease, opacity 0.25s ease, border-color 0.25s ease;
 }
 
 .nav-link:hover,
@@ -106,7 +109,7 @@ select {
 }
 
 .page-content {
-  padding: calc(5rem + 32px) 0 80px;
+  padding: calc(72px + 32px) 0 80px;
 }
 
 .hero-section,
@@ -119,19 +122,19 @@ select {
 }
 
 .hero-section {
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
   align-items: start;
 }
 
 .hero-copy {
-  max-width: 640px;
+  max-width: 660px;
 }
 
 .eyebrow {
   margin: 0 0 12px;
   color: var(--accent);
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   font-size: 0.78rem;
 }
@@ -143,7 +146,7 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.4rem, 3vw, 3.4rem);
+  font-size: clamp(2.6rem, 3.2vw, 3.8rem);
   line-height: 1.05;
 }
 
@@ -162,6 +165,7 @@ h2 {
 .hero-description {
   margin-top: 18px;
   font-size: 1.05rem;
+  max-width: 640px;
 }
 
 .hero-summary,
@@ -169,8 +173,8 @@ h2 {
 .map-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 28px;
+  border-radius: 20px;
+  padding: 30px;
 }
 
 .card-highlight {
@@ -178,11 +182,11 @@ h2 {
 }
 
 .section-heading {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .section-heading h1 {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .interest-list,
@@ -232,7 +236,7 @@ h2 {
 .profile-avatar {
   width: 64px;
   height: 64px;
-  border-radius: 16px;
+  border-radius: 18px;
   display: grid;
   place-items: center;
   background: var(--accent);
@@ -253,7 +257,7 @@ h2 {
   background: #fff;
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 20px;
+  padding: 22px;
 }
 
 .student-card {
