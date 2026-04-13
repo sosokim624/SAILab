@@ -171,14 +171,14 @@ h2 {
 .hero-summary,
 .card,
 .map-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 30px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 24px 0 0 0;
 }
 
 .card-highlight {
-  background: var(--surface-strong);
+  background: transparent;
 }
 
 .section-heading {
@@ -205,14 +205,6 @@ h2 {
 .news-item,
 .contact-list li {
   padding: 14px 0;
-  border-bottom: 1px solid rgba(15, 28, 53, 0.08);
-}
-
-.interest-list li:last-child,
-.publication-list li:last-child,
-.news-item:last-child,
-.contact-list li:last-child {
-  border-bottom: none;
 }
 
 .news-item {
@@ -252,12 +244,11 @@ h2 {
 }
 
 .student-card,
-.project-item,
-.map-card {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 22px;
+.project-item {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
 }
 
 .student-card {
@@ -334,7 +325,7 @@ h2 {
     background: var(--bg);
     padding: 16px 18px;
     border-radius: 18px;
-    border: 1px solid var(--border);
+    border: none;
   }
 
   .nav.open {
@@ -348,7 +339,7 @@ h2 {
   .nav-link {
     width: 100%;
     padding: 14px 0;
-    border-bottom: 1px solid rgba(15, 28, 53, 0.08);
+    border-bottom: none;
   }
 
   .nav-link:last-child {
