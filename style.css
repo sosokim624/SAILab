@@ -247,6 +247,35 @@ h2 {
   font-size: 0.9rem;
   color: var(--accent);
 }
+.publication-list {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+.publication-item {
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+}
+.publication-title {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+}
+.publication-title:hover {
+  text-decoration: underline;
+}
+.publication-meta {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
 .student-grid {
   display: grid;
   grid-template-columns: repeat(8, minmax(0, 1fr));
